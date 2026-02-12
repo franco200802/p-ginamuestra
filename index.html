@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Agencia Web | Diseño y Desarrollo</title>
+    
+    <meta name="description" content="Diseño de páginas web profesionales para emprendedores y empresas. Landing pages, e-commerce y sistemas de turnos.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo" onclick="location.reload()">FRANCO <span>WEB</span></div>
+        <ul class="nav-menu">
+            <li><a href="#servicios" class="nav-link">Servicios</a></li>
+            <li><a href="#portfolio" class="nav-link">Proyectos</a></li>
+            <li><a href="#faq" class="nav-link">Dudas</a></li>
+            <li><a href="#contacto" class="nav-link">Empezar</a></li>
+        </ul>
+        <a href="https://wa.me/541161242498" class="btn-main" style="padding: 10px 20px; font-size: 0.8rem;">Contacto Rápido</a>
+    </nav>
+
+    <header id="hero" class="hero">
+        <h1>Tu negocio necesita<br>verse profesional.</h1>
+        <p>Diseño páginas web modernas, rápidas y listas para vender. Desde catálogos industriales hasta estudios de pilates.</p>
+        <div style="margin-top: 30px;">
+            <a href="#servicios" class="btn-main">Ver Planes</a>
+        </div>
+    </header>
+
+    <section id="portfolio" class="section-padding reveal">
+        <h2 style="text-align: center; margin-bottom: 10px;">Proyectos Recientes</h2>
+        <p style="text-align: center; color: #94a3b8; margin-bottom: 50px;">Trabajos reales que ya están facturando.</p>
+        
+        <div class="products-grid">
+            <div class="product-card" onclick="window.open('https://tallerkappa.com.ar', '_blank')">
+                <div class="card-img-wrapper">
+                    <img src="https://tallerkappa.com.ar/images/mesa.jpeg" alt="Taller Kappa">
+                </div>
+                <div class="card-info">
+                    <span style="color: var(--accent); font-size: 0.8rem;">E-COMMERCE / CATÁLOGO</span>
+                    <h3>Taller Kappa</h3>
+                    <p class="card-desc">Catálogo digital para fábrica de muebles. Integración con WhatsApp para cotizaciones mayoristas.</p>
+                    <button class="btn-card">Ver Proyecto <i class="fas fa-external-link-alt"></i></button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1470&auto=format&fit=crop" alt="Pilates Flow">
+                </div>
+                <div class="card-info">
+                    <span style="color: var(--accent); font-size: 0.8rem;">TURNOS / SERVICIOS</span>
+                    <h3>Pilates Flow</h3>
+                    <p class="card-desc">Web para estudio de movimiento. Sistema de agenda semanal y reserva de clases vía WhatsApp.</p>
+                    <button class="btn-card">Ver Proyecto <i class="fas fa-external-link-alt"></i></button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1415&auto=format&fit=crop" alt="Tu Empresa">
+                </div>
+                <div class="card-info">
+                    <span style="color: var(--accent); font-size: 0.8rem;">LANDING PAGE</span>
+                    <h3>Tu Próxima Web</h3>
+                    <p class="card-desc">Acá va a estar tu marca. Un diseño moderno optimizado para convertir visitas en clientes.</p>
+                    <button class="btn-card" style="background: var(--primary); border:none;">¡Quiero la mía!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="section-padding reveal" style="background: rgba(30, 41, 59, 0.3);">
+        <h2 style="text-align: center; margin-bottom: 50px;">Elegí tu Plan</h2>
+        
+        <div class="products-grid">
+            <div class="product-card" style="cursor: default;">
+                <div class="card-info" style="text-align: center;">
+                    <h3>Landing Page</h3>
+                    <span class="card-price">Ideal Publicidad</span>
+                    <p class="card-desc">Una sola página impactante para vender un producto o servicio específico.</p>
+                    <ul style="text-align: left; margin-bottom: 20px; list-style: none; color: #ccc;">
+                        <li><i class="fas fa-check" style="color: var(--accent);"></i> Diseño Responsive</li>
+                        <li><i class="fas fa-check" style="color: var(--accent);"></i> Botón a WhatsApp</li>
+                        <li><i class="fas fa-check" style="color: var(--accent);"></i> Carga Rápida</li>
+                    </ul>
+                    <a href="https://wa.me/541161242498?text=Hola, me interesa el plan Landing Page." class="btn-main" style="width: 100%; display: block;">Consultar Precio</a>
+                </div>
+            </div>
+
+            <div class="product-card" style="cursor: default; border-color: var(--primary); transform: scale(1.05);">
+                <div class="card-info" style="text-align: center;">
+                    <span style="background: var(--primary); padding: 5px 10px; border-radius: 20px; font-size: 0.7rem; color: white;">MÁS VENDIDO</span>
+                    <h3 style="margin-top: 10px;">Web Catálogo</h3>
+                    <span class="card-price">Como Taller Kappa</span>
+                    <p class="card-desc">Mostrá todos tus productos y recibí los pedidos listos al WhatsApp.</p>
+                    <ul style="text-align: left; margin-bottom: 20px; list-style: none; color: #ccc;">
+                        <li><i class="fas fa-check" style="color: var(--accent);"></i> Catálogo Administrable</li>
+                        <li><i class="fas fa-check" style="color: var(--accent);"></i> Carrito de Compras</li>
+                        <li><i class="fas fa-check" style="color: var(--accent);"></i> Fotos y Descripciones</li>
+                    </ul>
+                    <a href="https://wa.me/541161242498?text=Hola, me interesa el plan Web Catálogo." class="btn-main" style="width: 100%; display: block;">Consultar Precio</a>
+                </div>
+            </div>
+
+            <div class="product-card" style="cursor: default;">
+                <div class="card-info" style="text-align: center;">
+                    <h3>Web de Turnos</h3>
+                    <span class="card-price">Como Pilates Flow</span>
+                    <p class="card-desc">Para consultorios, estudios o clases. Que tus clientes elijan horario solos.</p>
+                    <ul style="text-align: left; margin-bottom: 20px; list-style: none; color: #ccc;">
+                        <li><i class="fas fa-check" style="color: var(--accent);"></i> Agenda Interactiva</li>
+                        <li><i class="fas fa-check" style="color: var(--accent);"></i> Selección de Servicios</li>
+                        <li><i class="fas fa-check" style="color: var(--accent);"></i> Confirmación al Celular</li>
+                    </ul>
+                    <a href="https://wa.me/541161242498?text=Hola, me interesa el plan Web de Turnos." class="btn-main" style="width: 100%; display: block;">Consultar Precio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section-padding reveal">
+        <h2 style="text-align: center; margin-bottom: 40px;">Preguntas Frecuentes</h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="faq-item">
+                <div class="faq-question"><i class="fas fa-clock"></i> ¿Cuánto tardan en entregar la web?</div>
+                <div style="color: #94a3b8; margin-left: 30px;">Dependiendo la complejidad, una Landing Page puede estar lista en 3 a 5 días hábiles. Un catálogo completo, en 7 a 10 días.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question"><i class="fas fa-mobile-alt"></i> ¿Se ve bien en celulares?</div>
+                <div style="color: #94a3b8; margin-left: 30px;">Sí, absolutamente. Aplico la técnica "Mobile First", asegurando que se vea perfecto en cualquier pantalla.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question"><i class="fas fa-wallet"></i> ¿Tengo que pagar mantenimiento mensual?</div>
+                <div style="color: #94a3b8; margin-left: 30px;">No es obligatorio. Te entrego la web lista para usar. Solo pagás una vez por el diseño.</div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto" class="reveal">
+        <h2>Empezá hoy tu proyecto</h2>
+        <p style="margin-bottom: 30px;">Hablemos por WhatsApp y contame qué tenés en mente.</p>
+        
+        <a href="https://wa.me/541161242498" class="btn-main" style="padding: 15px 50px; font-size: 1.2rem;">
+            <i class="fab fa-whatsapp"></i> 11 6124-2498
+        </a>
+        
+        <p style="margin-top: 50px; font-size: 0.8rem; opacity: 0.5;">© 2025 Franco Web Design - Buenos Aires, Argentina.</p>
+    </footer>
+
+    <a href="https://wa.me/541161242498" class="float-wa" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        window.addEventListener('scroll', reveal);
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+            for (var i = 0; i < reveals.length; i++) {
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 100;
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+            }
+        }
+        reveal();
+    </script>
+</body>
+</html>
