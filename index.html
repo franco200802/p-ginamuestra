@@ -100,7 +100,7 @@
                         <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--accent); margin-right: 10px;"></i> Carrito de Compras</li>
                         <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--accent); margin-right: 10px;"></i> Pedidos al WhatsApp</li>
                     </ul>
-                    <a href="https://wa.me/541161242741?text=Hola Franco, me interesa el plan Catálogo de $150.000" class="btn-main" style="width: 100%; display: block;">Elegir este Plan</a>
+                    <a href="https://wa.me/541161242741?text=Hola Franco, me interesa el plan Web Catálogo de $150.000" class="btn-main" style="width: 100%; display: block;">Elegir este Plan</a>
                 </div>
             </div>
 
@@ -160,3 +160,36 @@
             </div>
         </div>
     </section>
+
+    <footer id="contacto" class="reveal">
+        <h2>¿Tenés una idea?</h2>
+        <p style="margin-bottom: 30px;">Escribime y te asesoro gratis sobre qué plan te conviene.</p>
+        
+        <a href="https://wa.me/541161242741" class="btn-main" style="padding: 15px 50px; font-size: 1.2rem;">
+            <i class="fab fa-whatsapp"></i> 11 6124-2741
+        </a>
+        
+        <p style="margin-top: 50px; font-size: 0.8rem; opacity: 0.5;">© 2025 Franco Web - Buenos Aires, Argentina.</p>
+    </footer>
+
+    <a href="https://wa.me/541161242741" class="float-wa" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        window.addEventListener('scroll', reveal);
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+            for (var i = 0; i < reveals.length; i++) {
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 100;
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+            }
+        }
+        reveal();
+    </script>
+</body>
+</html>
