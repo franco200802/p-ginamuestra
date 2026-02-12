@@ -57,7 +57,7 @@ nav {
 }
 .nav-link:hover { color: var(--accent); }
 
-/* --- 3. HERO SECTION (ANIMADA) --- */
+/* --- 3. HERO SECTION (ANIMADA & NUEVA FOTO) --- */
 @keyframes breathe {
     0% { transform: scale(1); }
     100% { transform: scale(1.05); }
@@ -74,8 +74,8 @@ nav {
 
 .hero::before {
     content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-    /* Imagen de fondo tecnológica */
-    background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.7)), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1470&auto=format&fit=crop');
+    /* --- CAMBIO AQUÍ: FOTO DE ESCRITORIO/SETUP --- */
+    background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1555&auto=format&fit=crop');
     background-size: cover; background-position: center;
     z-index: -1;
     animation: breathe 10s infinite alternate ease-in-out;
@@ -164,15 +164,6 @@ footer { background: #020617; color: #64748b; padding: 80px 5%; text-align: cent
     transition: all 0.3s ease; text-decoration: none;
 }
 .float-wa:hover { transform: scale(1.1); box-shadow: 0 0 30px rgba(37, 211, 102, 0.6); }
-
-.hero::before {
-    content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-    /* NUEVA IMAGEN: Escritorio creativo de diseño web */
-    background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1555&auto=format&fit=crop');
-    background-size: cover; background-position: center;
-    z-index: -1;
-    animation: breathe 10s infinite alternate ease-in-out;
-}
 
 /* Responsive */
 @media (max-width: 768px) {
